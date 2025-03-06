@@ -38,7 +38,7 @@ export const monthNames=[
  * @returns {string}  Date String. format: "Sunday 10, Jan"
  */
 
-export const getData=function(dateUnix,timezone){
+export const getDate=function(dateUnix,timezone){
     const date=new Date((dateUnix+timezone)*100);
     const weekDayName=weekDayNames[date.getUTCDay()];
     const monthName=monthNames[date.getUTCMonth()];
